@@ -2,7 +2,6 @@ html {
     font-family: 'Roboto', sans-serif;
     font-size: 16pt;
     background-color: #F5F5F5;
-    text-align: justify;
 }
 
 img {
@@ -19,7 +18,7 @@ li {
 }
 
 li:before {
-    content: "\2705 ";
+    content: "\1F608\0009";
 }
 
 .main_div {
