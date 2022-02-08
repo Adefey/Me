@@ -58,5 +58,6 @@ li:before {
 .data_div {
     font-weight: normal;
     margin: 0 10px 10px;
+    word-wrap: break-word;
 }
 
