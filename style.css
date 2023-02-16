@@ -22,12 +22,24 @@ li:before {
     content: "\1F608\0009";
 }
 
-.main_div {
-    margin: 0 auto;
-    width: 65%;
-    display: flex;
-    flex-direction: row;
+@media only screen and (hover: none) and (pointer: coarse){
+    .main_div {
+        margin: 0 auto;
+        width: 100%;
+        display: flex;
+        flex-direction: row;
+    }
 }
+
+@media only screen and (min-width: 992px){
+    .main_div {
+        margin: 0 auto;
+        width: 65%;
+        display: flex;
+        flex-direction: row;
+    }
+}
+
 
 .side_div {
     width: 50%;
