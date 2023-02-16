@@ -22,7 +22,8 @@ li:before {
     content: "\1F608\0009";
 }
 
-@media only screen and (hover: none) and (pointer: coarse){
+/* Custom, iPhone Retina */
+@media only screen and (min-width : 320px) {
     .main_div {
         margin: 0 auto;
         width: 100%;
@@ -31,15 +32,46 @@ li:before {
     }
 }
 
-@media only screen and (min-width: 992px){
+/* Extra Small Devices, Phones */
+@media only screen and (min-width : 480px) {
     .main_div {
         margin: 0 auto;
-        width: 65%;
+        width: 90%;
         display: flex;
         flex-direction: row;
     }
 }
 
+/* Small Devices, Tablets */
+@media only screen and (min-width : 768px) {
+    .main_div {
+        margin: 0 auto;
+        width: 80%;
+        display: flex;
+        flex-direction: row;
+    }
+}
+
+/* Medium Devices, Desktops */
+@media only screen and (min-width : 992px) {
+    .main_div {
+        margin: 0 auto;
+        width: 75%;
+        display: flex;
+        flex-direction: row;
+    }
+}
+
+/* Large Devices, Wide Screens */
+@media only screen and (min-width : 1200px) {
+    .main_div {
+        margin: 0 auto;
+        width: 65%;
+        display: flex;
+        flex-direction: row;
+        justify-content: center;
+    }
+}
 
 .side_div {
     width: 50%;
