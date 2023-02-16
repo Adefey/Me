@@ -36,7 +36,7 @@ li:before {
 @media only screen and (min-width : 480px) {
     .main_div {
         margin: 0 auto;
-        width: 90%;
+        width: 95%;
         display: flex;
         flex-direction: row;
     }
@@ -46,7 +46,7 @@ li:before {
 @media only screen and (min-width : 768px) {
     .main_div {
         margin: 0 auto;
-        width: 80%;
+        width: 90%;
         display: flex;
         flex-direction: row;
     }
@@ -56,7 +56,7 @@ li:before {
 @media only screen and (min-width : 992px) {
     .main_div {
         margin: 0 auto;
-        width: 75%;
+        width: 85%;
         display: flex;
         flex-direction: row;
     }
