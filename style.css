@@ -20,7 +20,7 @@ li {
 }
 
 li:before {
-    content: "\1F608\0009";
+    content: "\1F353\0009";
 }
 
 /* Custom, iPhone Retina */
