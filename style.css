@@ -17,6 +17,7 @@ ul {
 
 li {
     list-style-type: none;
+    text-align: start;
 }
 
 li:before {
@@ -78,11 +79,11 @@ li:before {
     width: 50%;
     margin: 10px;
     display: flex;
-    justify-content: top;
     flex-direction: column;
 }
 
 .info_div {
+    text-align: center;
     display: flex;
     flex-direction: column;
     align-items: center;
