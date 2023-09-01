@@ -21,7 +21,7 @@ li {
 }
 
 li:before {
-    content: "\1F49C";
+    content: "\1F49C    ";
 }
 
 /* Custom, iPhone Retina */
@@ -97,6 +97,7 @@ li:before {
     background-color: #FFF;
     transition: background-color 0.2s ease;
     box-sizing: border-box;
+    transition: all 0.5s ease;
 }
 
 .no_padding {
@@ -104,7 +105,8 @@ li:before {
 }
 
 .info_div:hover {
-    background-color: #999DDE;
+    transform: scale(1.05);
+    box-shadow: 0 0 40px 0px #999;
 }
 
 .data_div {
