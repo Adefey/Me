@@ -34,14 +34,13 @@ body {
   }
 
   .main_div {
-    width: 95%;
+    width: 100%;
     display: flex;
     flex-direction: column;
     justify-content: center;
   }
 
   .side_div {
-    width: 100%;
     margin: 10px;
     display: flex;
     flex-direction: column;
@@ -64,7 +63,6 @@ body {
   }
 
   .side_div {
-    width: 50%;
     margin: 10px;
     display: flex;
     flex-direction: column;
