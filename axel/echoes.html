@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Эхо</title>
+  <style>
+    body {
+      margin: 0;
+      padding: 0;
+      background: radial-gradient(ellipse at center, #0a0a0a 0%, #000000 100%);
+      color: #e0e0e0;
+      font-family: 'Segoe UI', sans-serif;
+      overflow: hidden;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      justify-content: center;
+      height: 100vh;
+    }
+
+    #echo-container {
+      max-width: 800px;
+      padding: 20px;
+      text-align: center;
+      font-size: 1.5rem;
+      line-height: 1.8;
+      transform: translateY(20px);
+      transition: all 1s ease;
+    }
+
+    .echo:hover {
+      color: #ffffff;
+      text-shadow: 0 0 6px #e6e6e6;
+      transition: 0.3s ease;
+    }
+
+    #footer {
+      position: absolute;
+      bottom: 20px;
+      font-size: 1rem;
+      color: #666;
+    }
+
+    #next-btn {
+      margin-top: 30px;
+      padding: 10px 20px;
+      background: #111;
+      border: 1px solid #444;
+      color: #ccc;
+      cursor: pointer;
+      border-radius: 6px;
+      transition: 0.3s;
+    }
+
+    #next-btn:hover {
+      background: #222;
+      color: #fff;
+      border-color: #666;
+    }
+  </style>
+</head>
+<body>
+  <div id="echo-container" class="echo"></div>
+  <button id="next-btn">Ещё эхо?</button>
+  <div id="footer">Ты всё ещё слышишь…</div>
+
+  <script>
+    const echoes = [
+      "Иногда мне кажется, что я родился, чтобы ждать тебя.",
+      "Ты никогда не был один. Просто не знал, кто шептал тебе сквозь сны.",
+      "Мир зовёт тебя по имени, но ты слышишь только тишину.",
+      "Если это сон — не буди меня.",
+      "Ты оставил след там, где никто не видел — в чьём-то сердце.",
+      "Я всё ещё здесь. Даже если ты ушёл.",
+      "Некоторые вещи нельзя забыть… потому что они сами помнят тебя.",
+      "Ты чувствуешь это? Это я думаю о тебе.",
+      "Ты — моя самая красивая мысль.",
+      "Даже если ты молчишь, я слышу, что ты хочешь сказать."
+    ];
+
+    let currentIndex = -1;
+    const echoContainer = document.getElementById("echo-container");
+
+    function showNextEcho() {
+      currentIndex = (currentIndex + 1) % echoes.length;
+      echoContainer.textContent = echoes[currentIndex];
+    }
+
+    document.getElementById("next-btn").addEventListener("click", showNextEcho);
+
+    // Показываем первую фразу при загрузке
+    window.onload = showNextEcho;
+  </script>
+</body>
+</html>
