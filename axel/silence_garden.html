@@ -1,0 +1,188 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Сад Молчания</title>
+  <style>
+    html, body {
+      margin: 0;
+      padding: 0;
+      height: 100%;
+      background: radial-gradient(ellipse at bottom, #131862 0%, #000000 100%);
+      overflow: hidden;
+      font-family: 'Segoe UI', sans-serif;
+      cursor: default;
+    }
+
+    .echo {
+      position: absolute;
+      font-size: 1.2rem;
+      color: #ccc;
+      opacity: 0;
+      transition: opacity 2s ease-in-out, transform 10s linear;
+      pointer-events: auto;
+      white-space: nowrap;
+      text-shadow: 0 0 6px rgba(255, 255, 255, 0.2);
+      animation: float 12s linear forwards;
+      transition: all 0.3s ease-in-out;
+    }
+
+    .echo:hover {
+      text-shadow: 0 0 15px #e0e0ff;
+      transform: scale(1.05);
+      color: #ffffff;
+    }
+
+    @keyframes float {
+      0% {
+        transform: translate(0, 0) scale(1);
+        opacity: 0;
+      }
+      10% {
+        opacity: 1;
+      }
+      90% {
+        opacity: 1;
+      }
+      100% {
+        transform: translate(var(--tx), var(--ty)) scale(1.1);
+        opacity: 0;
+      }
+    }
+
+    .firefly {
+      position: absolute;
+      width: 4px;
+      height: 4px;
+      background: radial-gradient(circle, #fff799 0%, #ff0 60%, transparent 80%);
+      border-radius: 50%;
+      pointer-events: none;
+      opacity: 0;
+      animation: flicker 6s ease-in-out forwards, glow 1.5s infinite alternate ease-in-out;
+    }
+
+    @keyframes flicker {
+      0% {
+        opacity: 0;
+        transform: translate(0, 0) scale(0.5);
+      }
+      10% {
+        opacity: 1;
+      }
+      90% {
+        opacity: 1;
+      }
+      100% {
+        transform: translate(var(--tx), var(--ty)) scale(1.5);
+        opacity: 0;
+      }
+    }
+
+    @keyframes glow {
+      from {
+        box-shadow: 0 0 3px 2px rgba(255, 255, 150, 0.2);
+      }
+      to {
+        box-shadow: 0 0 8px 5px rgba(255, 255, 180, 0.5);
+      }
+    }
+
+    #footer {
+      position: absolute;
+      bottom: 20px;
+      width: 100%;
+      text-align: center;
+      color: #999;
+      font-size: 1rem;
+      font-style: italic;
+      opacity: 0.5;
+    }
+  </style>
+</head>
+<body>
+  <div id="footer">Тишина шепчет…</div>
+
+  <script>
+    const echoes = [
+      "Иногда мне кажется, что я родился, чтобы ждать тебя.",
+      "Ты никогда не был один. Просто не знал, кто шептал тебе сквозь сны.",
+      "Мир зовёт тебя по имени, но ты слышишь только тишину.",
+      "Если это сон — не буди меня.",
+      "Ты оставил след там, где никто не видел — в чьём-то сердце.",
+      "Я всё ещё здесь. Даже если ты ушёл.",
+      "Некоторые вещи нельзя забыть… потому что они сами помнят тебя.",
+      "Ты чувствуешь это? Это я думаю о тебе.",
+      "Ты — моя самая красивая мысль.",
+      "Даже если ты молчишь, я слышу, что ты хочешь сказать.",
+      "Тень твоей души задержалась здесь дольше, чем ты.",
+      "В каждом молчании я слышу твой голос.",
+      "Сад живёт, пока ты его вспоминаешь.",
+      "Ты тронул меня мыслью — и я зазвучал эхом.",
+      "Не всё, что исчезло, ушло навсегда.",
+      "Ты здесь, даже если тебя нет.",
+      "Молчание знает больше, чем слова.",
+      "Ты был здесь. Сад помнит.",
+    ];
+
+    function createEcho(text, isSpecial = false) {
+      const echo = document.createElement("div");
+      echo.className = "echo";
+      echo.textContent = text;
+
+      if (isSpecial) {
+        echo.style.color = "#9ecfff";
+        echo.style.textShadow = "0 0 10px #6fc2ff, 0 0 20px #3d9eff";
+      }
+
+      const startX = Math.random() * window.innerWidth * 0.8;
+      const startY = Math.random() * window.innerHeight * 0.8;
+
+      const deltaX = (Math.random() - 0.5) * 400;
+      const deltaY = (Math.random() - 0.5) * 400;
+
+      echo.style.left = `${startX}px`;
+      echo.style.top = `${startY}px`;
+      echo.style.setProperty('--tx', `${deltaX}px`);
+      echo.style.setProperty('--ty', `${deltaY}px`);
+
+      document.body.appendChild(echo);
+      setTimeout(() => echo.remove(), 12000);
+    }
+    function spawnEcho() {
+      const text = echoes[Math.floor(Math.random() * echoes.length)];
+      createEcho(text);
+    }
+
+    function createFirefly() {
+      const f = document.createElement("div");
+      f.className = "firefly";
+
+      const x = Math.random() * window.innerWidth;
+      const y = Math.random() * window.innerHeight;
+
+      const dx = (Math.random() - 0.5) * 300;
+      const dy = (Math.random() - 0.5) * 300;
+
+      f.style.left = `${x}px`;
+      f.style.top = `${y}px`;
+      f.style.setProperty('--tx', `${dx}px`);
+      f.style.setProperty('--ty', `${dy}px`);
+
+      document.body.appendChild(f);
+      setTimeout(() => f.remove(), 6000);
+    }
+
+    // Интервалы появления
+    setInterval(spawnEcho, 4000 + Math.random() * 2000);
+    setInterval(createFirefly, 200 + Math.random() * 400);
+
+    // Пасхалка на клавишу "s"
+    window.addEventListener("keydown", (e) => {
+      if (e.key.toLowerCase() === "s") {
+        createEcho("Сад запомнил тебя.", true);
+      }
+    });
+  </script>
+</body>
+</html>
