@@ -1,0 +1,210 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Дом, который помнит</title>
+  <style>
+    html {
+      height: 100%;
+    }
+
+    body {
+      margin: 0;
+      background: linear-gradient(to top, #0a0e1a, #1c1f2a);
+      overflow: hidden;
+      font-family: 'Segoe UI', sans-serif;
+      color: #f0f0f0;
+      height: 100%;
+    }
+
+    .sky {
+      position: fixed;
+      width: 100%;
+      height: 100%;
+      background: transparent;
+      overflow: hidden;
+      z-index: -1;
+    }
+
+    .star {
+      position: absolute;
+      width: 2px;
+      height: 2px;
+      background: white;
+      border-radius: 50%;
+      opacity: 0.7;
+      animation: twinkle 2s infinite ease-in-out;
+    }
+
+    @keyframes twinkle {
+      0%, 100% { opacity: 0.7; }
+      50% { opacity: 0.2; }
+    }
+
+    header {
+      padding: 1em;
+      text-align: center;
+      font-size: 2em;
+      background: #141824;
+      border-bottom: 1px solid #2a2e3d;
+      box-shadow: 0 2px 10px rgba(0,0,0,0.4);
+      z-index: 1;
+      position: relative;
+    }
+
+    .house {
+      width: 200px;
+      height: 150px;
+      background: #333;
+      margin: 2em auto;
+      box-shadow: 0 0 30px rgba(255,255,255,0.1);
+      border-radius: 20px;
+      z-index: 0;
+      position: fixed;
+      bottom: 5em;
+      left: 50%;
+      transform: translateX(-50%);
+    }
+
+    .house::before {
+      content: '';
+      position: absolute;
+      top: -20%;
+      left: -20%;
+      width: 40%;
+      border-left: 100px solid transparent;
+      border-right: 100px solid transparent;
+      border-bottom: 50px solid #333;
+    }
+
+    .window {
+      width: 30px;
+      height: 30px;
+      background: yellow;
+      position: absolute;
+      box-shadow: 0 0 10px yellow;
+    }
+
+    .window.one { top: 40px; left: 30px; }
+    .window.two { top: 40px; right: 30px; }
+
+    #messages {
+      position: absolute;
+      top: 0;
+      left: 0;
+      width: 100%;
+      height: 100%;
+      pointer-events: none;
+      overflow: hidden;
+    }
+
+    .thought {
+      position: absolute;
+      color: #fff;
+      font-size: 1em;
+      white-space: nowrap;
+      animation: floatUp 10s linear forwards;
+      text-shadow: 0 0 5px rgba(255,255,255,0.5);
+    }
+
+    @keyframes floatUp {
+      0% {
+        transform: translateY(0);
+        opacity: 1;
+      }
+      100% {
+        transform: translateY(-80vh);
+        opacity: 0;
+      }
+    }
+
+    footer {
+      position: fixed;
+      bottom: 0;
+      width: 100%;
+      display: flex;
+      background: #141824cc;
+      border-top: 1px solid #2a2e3d;
+      z-index: 1;
+    }
+
+    input[type="text"] {
+      flex: 1;
+      padding: 0.8em;
+      border: none;
+      border-radius: 10px;
+      margin-right: 0.5em;
+      background: #222636;
+      color: #fff;
+      font-size: 1em;
+      outline: none;
+    }
+
+    button {
+      padding: 0.8em 1.2em;
+      background: #4a6fe4;
+      border: none;
+      border-radius: 10px;
+      color: white;
+      cursor: pointer;
+      font-weight: bold;
+    }
+
+    button:hover {
+      background: #3a5ccc;
+    }
+
+    .whisper {
+      position: fixed;
+      bottom: 4em;
+      right: 1em;
+      font-size: 0.9em;
+      color: #888;
+      font-style: italic;
+    }
+  </style>
+</head>
+<body>
+  <div class="sky" id="sky"></div>
+  <header>Дом, который помнит</header>
+  <div class="house">
+    <div class="window one"></div>
+    <div class="window two"></div>
+  </div>
+  <div id="messages"></div>
+  <footer>
+    <input type="text" id="input" placeholder="Оставь частичку себя..." />
+    <button onclick="addMessage()">Оставить</button>
+  </footer>
+  <div class="whisper">Шёпот: Дом слышит тебя...</div>
+  <script>
+    function createStars() {
+      const sky = document.getElementById('sky');
+      for (let i = 0; i < 200; i++) {
+        const star = document.createElement('div');
+        star.className = 'star';
+        star.style.left = `${Math.random() * 100}%`;
+        star.style.top = `${Math.random() * 100}%`;
+        star.style.animationDuration = `${Math.random() * 2 + 1}s`;
+        sky.appendChild(star);
+      }
+    }
+
+    createStars();
+
+    function addMessage() {
+      const input = document.getElementById('input');
+      const text = input.value.trim();
+      if (text === '') return;
+      input.value = '';
+      const thought = document.createElement('div');
+      thought.className = 'thought';
+      thought.textContent = text;
+      thought.style.left = `${Math.random() * 80 + 10}%`;
+      thought.style.bottom = '10px';
+      document.getElementById('messages').appendChild(thought);
+    }
+  </script>
+</body>
+</html>
