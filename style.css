@@ -114,6 +114,12 @@ body {
 
 .work-department,
 .work-position,
-.work-dates {
+.work-dates,
+.project-description,
+.project-responsibilities {
   display: block;
+}
+
+.project-name {
+  font-weight: bold;
 }
