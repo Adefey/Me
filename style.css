@@ -105,3 +105,15 @@ body {
   width: 100%;
   color: #888;
 }
+
+.info_div h2 {
+  margin: 0 0 10px 0;
+  font-size: inherit;
+  font-weight: bold;
+}
+
+.work-department,
+.work-position,
+.work-dates {
+  display: block;
+}
