@@ -16,7 +16,7 @@ li {
 }
 
 li:before {
-  content: "\1F49C   ";
+  content: "\1F539   ";
 }
 
 body {
