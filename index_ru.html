@@ -9,19 +9,46 @@
       name="description"
       content="Моя домашняя страница с информацией обо мне, моих проектах и о сервере, на котором это все сейчас запущено"
     />
+    <meta property="og:title" content="Андрей Коленков - Системный Программист и Бекенд Разработчик" />
+    <meta
+      property="og:description"
+      content="Андрей Коленков – инженер по верификации ПО в NVIDIA, экс-разработчик бэкенда в VK Ads. Занимается self-hosted инфраструктурой, веб-приложениями, нейросетями и администрированием Minecraft-серверов."
+    />
+    <meta property="og:type" content="profile" />
+    <meta property="profile:first_name" content="Andrei" />
+    <meta property="profile:last_name" content="Kolenkov" />
+    <meta property="profile:username" content="adefe" />
     <meta name="viewport" content="width=device-width, initial-scale=1" />
     <meta name="yandex-verification" content="be09e8b87962f042" />
     <link rel="stylesheet" href="./style.css?v=1.0" />
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
-    <link
-      href="https://fonts.googleapis.com/css2?family=Roboto:wght@400&display=swap"
-      rel="stylesheet"
-    />
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400&display=swap" rel="stylesheet" />
     <link rel="apple-touch-icon" sizes="180x180" href="/apple-touch-icon.png" />
     <link rel="icon" type="image/png" sizes="32x32" href="/favicon-32x32.png" />
     <link rel="icon" type="image/png" sizes="16x16" href="/favicon-16x16.png" />
     <link rel="manifest" href="/site.webmanifest" />
+    <script type="application/ld+json">
+      {
+        "@context": "https://schema.org",
+        "@type": "Person",
+        "name": "Андрей Коленков",
+        "alternateName": "Adefe",
+        "url": "https://adefe.xyz/",
+        "sameAs": ["https://github.com/Adefey", "https://www.linkedin.com/in/adefe/", "https://t.me/Adefe"],
+        "jobTitle": "Software Verification Engineer",
+        "worksFor": {
+          "@type": "Organization",
+          "name": "NVIDIA"
+        },
+        "alumniOf": {
+          "@type": "CollegeOrUniversity",
+          "name": "BMSTU"
+        },
+        "knowsAbout": ["Python", "FastAPI", "C++", "Linux", "MLOps", "Nginx", "Russian", "English"],
+        "description": "Андрей Кленков - инженер-программист, специализирующийся на высокопроизводительных сетях и бэкенд-разработке. В настоящее время - инженер по верификации ПО в NVIDIA, ранее - Python-разработчик бэкенда в VK Ads. Владеет английским и русским языками. Имеет опыт работы с self-hosted решениями, веб-приложениями, нейросетями (включая генеративный ИИ) и управляет множеством сервисов, включая Minecraft-серверы, Nextcloud и инструменты мониторинга на собственной инфраструктуре."
+      }
+    </script>
   </head>
   <body>
     <div class="main_div">
@@ -160,16 +187,13 @@
             <ul>
               <li>
                 <span class="project-name">
-                  <a href="https://www.nvidia.com/en-eu/networking/products/infiniband/"
-                    >InfiniBand & NVLink</a
-                  >
+                  <a href="https://www.nvidia.com/en-eu/networking/products/infiniband/">InfiniBand & NVLink</a>
                 </span>
                 <span class="project-description">
                   Высокопроизводительные сетевые решения для суперкомпьютеров от NVIDIA;
                 </span>
                 <span class="project-responsibilities">
-                  Обеспечиваю качество программных продуктов для конфигурации и управления
-                  вычислительными сетями;
+                  Обеспечиваю качество программных продуктов для конфигурации и управления вычислительными сетями;
                 </span>
               </li>
               <li>
@@ -180,8 +204,8 @@
                   >Продукт VK Рекламы для генерации рекламного контента с помощью нейросетей;</span
                 >
                 <span class="project-responsibilities">
-                  Занимался разработкой бизнес логики и инструментов жизненного цикла
-                  сгенерированного контента на Python 3 и FastAPI;
+                  Занимался разработкой бизнес логики и инструментов жизненного цикла сгенерированного контента на
+                  Python 3 и FastAPI;
                 </span>
               </li>
               <li>
@@ -189,13 +213,11 @@
                   <a href="https://github.com/TeamRattlesnake">Strawberry</a>
                 </span>
                 <span class="project-description">
-                  Выпускной проект ОЦ VK в МГТУ - миниапп для генерации постов для сообществ
-                  ВКонтакте с помощью нейросетей, приложение использует React JS, VK Bridge, VKUI во
-                  фронтенде;
+                  Выпускной проект ОЦ VK в МГТУ - миниапп для генерации постов для сообществ ВКонтакте с помощью
+                  нейросетей, приложение использует React JS, VK Bridge, VKUI во фронтенде;
                 </span>
                 <span class="project-responsibilities">
-                  Разработал бекенд на Python 3 и настроил автодеплой, FastAPI, руководитель
-                  разработки;
+                  Разработал бекенд на Python 3 и настроил автодеплой, FastAPI, руководитель разработки;
                 </span>
               </li>
               <li>
@@ -203,13 +225,11 @@
                   <a href="https://github.com/Adefey/DjangoNginxGunicornDockers">Harmful Cloud</a>
                 </span>
                 <span class="project-description">
-                  Проект второго семестра ОЦ VK в МГТУ - нейросетевой инструмент с нейросетью GPT3,
-                  обученной на сообществах социальной сети ВКонтакте и сайт для демонстрации ее
-                  работы;
+                  Проект второго семестра ОЦ VK в МГТУ - нейросетевой инструмент с нейросетью GPT3, обученной на
+                  сообществах социальной сети ВКонтакте и сайт для демонстрации ее работы;
                 </span>
                 <span class="project-responsibilities"
-                  >Собрал и обработал данные, создал сайт и инфраструктуру для деплоя
-                  нейросети;</span
+                  >Собрал и обработал данные, создал сайт и инфраструктуру для деплоя нейросети;</span
                 >
               </li>
               <li>
@@ -217,13 +237,12 @@
                   <a href="https://github.com/Adefey/Rattlesnake">Rattlesnake</a>
                 </span>
                 <span class="project-description">
-                  Проект первого семестра ОЦ VK в МГТУ - клиент-серверная система для удаленных
-                  вычислений по блок-схеме клиента, написана на C++, исполняет код блоков на Python
-                  3;
+                  Проект первого семестра ОЦ VK в МГТУ - клиент-серверная система для удаленных вычислений по блок-схеме
+                  клиента, написана на C++, исполняет код блоков на Python 3;
                 </span>
                 <span class="project-responsibilities">
-                  Разработал форкающий сервер для многопроцессной обработки запросов, реализовал
-                  бизнес логику, руководил разработкой проекта;
+                  Разработал форкающий сервер для многопроцессной обработки запросов, реализовал бизнес логику,
+                  руководил разработкой проекта;
                 </span>
               </li>
               <li>
@@ -231,9 +250,8 @@
                   <a href="https://vk.com/bmstucraft">BMSTUCraft</a>
                 </span>
                 <span class="project-description">
-                  Официальный Minecraft сервер МГТУ, на нем проводили день открытых дверей весной
-                  2020, длительное время хостился на мощностях университета, сейчас - на личном
-                  сервере;
+                  Официальный Minecraft сервер МГТУ, на нем проводили день открытых дверей весной 2020, длительное время
+                  хостился на мощностях университета, сейчас - на личном сервере;
                 </span>
                 <span class="project-responsibilities"
                   >Автор идеи, собрал команду администраторов и игроков, администратор сервера</span
@@ -303,9 +321,7 @@
                 - проект Blueberry, PMA
               </li>
               <li>
-                <a href="https://mongo-express-blueberry.adefe.xyz/"
-                  >mongo-express-blueberry.adefe.xyz</a
-                >
+                <a href="https://mongo-express-blueberry.adefe.xyz/">mongo-express-blueberry.adefe.xyz</a>
                 - проект Blueberry, Mongo Express
               </li>
               <li>
