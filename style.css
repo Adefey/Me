@@ -16,7 +16,7 @@ li {
 }
 
 li:before {
-  content: "\2728   ";
+  content: "🫐 ";
 }
 
 body {

@@ -52,4 +52,8 @@
 		<loc>https://search.adefe.xyz/ui</loc>
 		<priority>0.8</priority>
 	</url>
+	<url>
+		<loc>https://radio.adefe.xyz/public/adefe_radio</loc>
+		<priority>0.8</priority>
+	</url>
 </urlset>
