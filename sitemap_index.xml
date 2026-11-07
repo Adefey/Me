@@ -85,49 +85,49 @@
 	<url>
 		<loc>https://radio.adefe.xyz/public/adefe_radio</loc>
 		<lastmod>2026-11-07</lastmod>
-		<changefreq>always</changefreq>
+		<changefreq>hourly</changefreq>
 		<priority>0.8</priority>
 	</url>
 	<url>
 		<loc>https://radio.adefe.xyz/public/adefe_radio_-_ebm,_gothic</loc>
 		<lastmod>2026-11-07</lastmod>
-		<changefreq>always</changefreq>
+		<changefreq>hourly</changefreq>
 		<priority>0.8</priority>
 	</url>
 	<url>
 		<loc>https://radio.adefe.xyz/public/adefe_radio_-_nightcore</loc>
 		<lastmod>2026-11-07</lastmod>
-		<changefreq>always</changefreq>
+		<changefreq>hourly</changefreq>
 		<priority>0.8</priority>
 	</url>
 	<url>
 		<loc>https://radio.adefe.xyz/public/adefe_radio_-_electronic_metal</loc>
 		<lastmod>2026-11-07</lastmod>
-		<changefreq>always</changefreq>
+		<changefreq>hourly</changefreq>
 		<priority>0.8</priority>
 	</url>
 	<url>
 		<loc>https://radio.adefe.xyz/public/adefe_radio_-_industrial</loc>
 		<lastmod>2026-11-07</lastmod>
-		<changefreq>always</changefreq>
+		<changefreq>hourly</changefreq>
 		<priority>0.8</priority>
 	</url>
 	<url>
 		<loc>https://radio.adefe.xyz/public/adefe_radio_-_aggrotech</loc>
 		<lastmod>2026-11-07</lastmod>
-		<changefreq>always</changefreq>
+		<changefreq>hourly</changefreq>
 		<priority>0.8</priority>
 	</url>
 	<url>
 		<loc>https://radio.adefe.xyz/public/adefe_radio_-_digital_relax</loc>
 		<lastmod>2026-11-07</lastmod>
-		<changefreq>always</changefreq>
+		<changefreq>hourly</changefreq>
 		<priority>0.8</priority>
 	</url>
 	<url>
 		<loc>https://radio.adefe.xyz/public/adefe_radio_-_demoscene</loc>
 		<lastmod>2026-11-07</lastmod>
-		<changefreq>always</changefreq>
+		<changefreq>hourly</changefreq>
 		<priority>0.8</priority>
 	</url>
 </urlset>
