@@ -3,7 +3,8 @@
 	xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
 	<url>
 		<loc>https://adefe.xyz/</loc>
-		<lastmod>2026-10-03</lastmod>
+		<lastmod>2026-11-07</lastmod>
+		<changefreq>monthly</changefreq>
 		<priority>1.0</priority>
 	</url>
 	<url>
@@ -18,58 +19,115 @@
 	</url>
 	<url>
 		<loc>https://strawberry.adefe.xyz/</loc>
+		<lastmod>2026-10-07</lastmod>
 		<priority>0.8</priority>
 	</url>
 	<url>
 		<loc>https://strawberry.adefe.xyz/docs/</loc>
+		<lastmod>2026-10-07</lastmod>
 		<priority>0.8</priority>
 	</url>
 	<url>
 		<loc>https://harmful-cloud.adefe.xyz/</loc>
+		<lastmod>2026-10-07</lastmod>
 		<priority>0.8</priority>
 	</url>
 	<url>
 		<loc>https://blueberry.adefe.xyz/</loc>
+		<lastmod>2026-10-07</lastmod>
 		<priority>0.8</priority>
 	</url>
 	<url>
 		<loc>https://api-blueberry.adefe.xyz/docs/</loc>
+		<lastmod>2026-10-07</lastmod>
 		<priority>0.8</priority>
 	</url>
 	<url>
 		<loc>https://mc.adefe.xyz/</loc>
+		<lastmod>2026-10-07</lastmod>
 		<priority>0.8</priority>
 	</url>
 	<url>
 		<loc>https://sb.adefe.xyz/</loc>
+		<lastmod>2026-10-07</lastmod>
 		<priority>0.8</priority>
 	</url>
 	<url>
 		<loc>https://nextcloud.adefe.xyz/</loc>
+		<lastmod>2026-10-07</lastmod>
 		<priority>0.8</priority>
 	</url>
 	<url>
 		<loc>https://search.adefe.xyz/ui</loc>
-		<priority>0.8</priority>
-	</url>
-	<url>
-		<loc>https://radio.adefe.xyz/public/adefe_radio</loc>
+		<lastmod>2026-10-07</lastmod>
 		<priority>0.8</priority>
 	</url>
 	<url>
 		<loc>https://featherweight-monitoring.adefe.xyz/</loc>
+		<lastmod>2026-10-07</lastmod>
 		<priority>0.8</priority>
 	</url>
 	<url>
 		<loc>https://open-webui.adefe.xyz/</loc>
+		<lastmod>2026-10-07</lastmod>
 		<priority>0.8</priority>
 	</url>
 	<url>
 		<loc>https://openclaw.adefe.xyz/</loc>
+		<lastmod>2026-10-07</lastmod>
 		<priority>0.8</priority>
 	</url>
 	<url>
 		<loc>https://whisper.adefe.xyz/docs/</loc>
+		<lastmod>2026-10-07</lastmod>
+		<priority>0.8</priority>
+	</url>
+	<url>
+		<loc>https://radio.adefe.xyz/public/adefe_radio</loc>
+		<lastmod>2026-11-07</lastmod>
+		<changefreq>always</changefreq>
+		<priority>0.8</priority>
+	</url>
+	<url>
+		<loc>https://radio.adefe.xyz/public/adefe_radio_-_ebm,_gothic</loc>
+		<lastmod>2026-11-07</lastmod>
+		<changefreq>always</changefreq>
+		<priority>0.8</priority>
+	</url>
+	<url>
+		<loc>https://radio.adefe.xyz/public/adefe_radio_-_nightcore</loc>
+		<lastmod>2026-11-07</lastmod>
+		<changefreq>always</changefreq>
+		<priority>0.8</priority>
+	</url>
+	<url>
+		<loc>https://radio.adefe.xyz/public/adefe_radio_-_electronic_metal</loc>
+		<lastmod>2026-11-07</lastmod>
+		<changefreq>always</changefreq>
+		<priority>0.8</priority>
+	</url>
+	<url>
+		<loc>https://radio.adefe.xyz/public/adefe_radio_-_industrial</loc>
+		<lastmod>2026-11-07</lastmod>
+		<changefreq>always</changefreq>
+		<priority>0.8</priority>
+	</url>
+	<url>
+		<loc>https://radio.adefe.xyz/public/adefe_radio_-_aggrotech</loc>
+		<lastmod>2026-11-07</lastmod>
+		<changefreq>always</changefreq>
+		<priority>0.8</priority>
+	</url>
+	<url>
+		<loc>https://radio.adefe.xyz/public/adefe_radio_-_digital_relax</loc>
+		<lastmod>2026-11-07</lastmod>
+		<changefreq>always</changefreq>
+		<priority>0.8</priority>
+	</url>
+	<url>
+		<loc>https://radio.adefe.xyz/public/adefe_radio_-_demoscene</loc>
+		<lastmod>2026-11-07</lastmod>
+		<changefreq>always</changefreq>
 		<priority>0.8</priority>
 	</url>
 </urlset>
